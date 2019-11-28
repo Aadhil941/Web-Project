@@ -73,14 +73,14 @@ $(document).ready(function () {
  myApp.factory("bookService",function () {
    var books =[
   		{
-  			imgUrl: "adultery.jpeg",
-  			name: "Adultery",
+  			imgUrl: "java.jpg",
+  			name: "Java Concurrency in Practice",
   			price: 3050,
   			rating: 4,
   			binding: "Paperback",
-  			publisher: "Random House India",
-  			releaseDate: "12-08-2014",
-  			details: "Linda, in her thirties, begins to question the routine and predictability of her days. In everybodys eyes, she has a perfect life-happy marriage, children and a career..."
+  			publisher: "Wrox Press",
+  			releaseDate: "09-05-2006",
+  			details: "I was fortunate indeed to have worked with a fantastic team on the design and implementation of the concurrency features added to the Java platform in Java 5.0 and Java 6...."
   		},
   		{
   			imgUrl: "coder.jpg",
@@ -93,44 +93,44 @@ $(document).ready(function () {
   			details: "Between 1986 and 2000 I worked closely with Jim Newkirk, a colleague from Teradyne. He and I shared a passion for programming and for clean code.We would spend nights, evenings, and weekends together playing with different programming styles and design techniques..."
   		},
   		{
-  			imgUrl: "life-or-death.jpeg",
-  			name: "Life or Death",
+  			imgUrl: "csharp.jpg",
+  			name: "C# 7.0 in a Nutshell: The Definitive Reference",
   			price: 3370,
+  			rating: 4.64,
+  			binding: "Paperback",
+  			publisher: "O'Reilly Media",
+  			releaseDate: "28-10-2017",
+  			details: "When you have questions about C# 7.0 or the .NET CLR and its core Framework assemblies, this bestselling guide has the answers you need. C# has become a language of unusual flexibility and breadth since its premiere in 2000..."
+  		},
+  		{
+  			imgUrl: "python.jpg",
+  			name: "Dive into Python",
+  			price: 5999,
   			rating: 4,
   			binding: "Paperback",
-  			publisher: "Hachette India",
-  			releaseDate: "01-04-2017",
-  			details: "Why would a man escape from prison the day before he's due to be released? Audie Palmer has spent a decade in prison for an armed robbery in which four people died, including two of his gang..."
+  			publisher: "Apress",
+  			releaseDate: "05-11-2004",
+  			details: "Whether you're an experienced programmer looking to get into Python or grizzled Python veteran who remembers the days when you had to import the string module, Dive Into Python is your 'desert island' Python book..."
   		},
   		{
-  			imgUrl: "playing.jpeg",
-  			name: "Playing It My Way : My Autobiography",
-  			price: 5999,
-  			rating: 5,
-  			binding: "Hardcover",
-  			publisher: "Hodder & Stoughton",
-  			releaseDate: "01-08-2010",
-  			details: "I knew that if I agreed to write my story, I would have to be completely honest, as thats the way I have always played the game and that would mean talking about a number of things..."
-  		},
-  		{
-  			imgUrl: "the-fault.jpeg",
-  			name: "The Fault in Our Stars",
-  			price: 2500,
-  			rating: 4.5,
+  			imgUrl: "iot.jpg",
+  			name: "Enterprise IoT: Strategies and Best Practices for Connected Products and Services",
+  			price:9000,
+  			rating: 3.5,
   			binding: "Paperback",
-  			publisher: "Penguin Books Ltd",
-  			releaseDate: "25-01-2013",
-  			details: "Despite the tumor-shrinking medical miracle that has bought her a few years, Hazel has never been anything but terminal, her final chapter inscribed upon diagnosis..."
+  			publisher: "O'Reilly Media",
+  			releaseDate: "22-11-2015",
+  			details: "Current hype aside, the Internet of Things will ultimately become as fundamental as the Internet itself, with lots of opportunities and trials along the way. To help you navigate these choppy waters..."
   		},
   		{
-  			imgUrl: "wings-of-fire.jpeg",
-  			name: "Wings of Fire: An Autobiography",
+  			imgUrl: "js.jpg",
+  			name: "Beginning JavaScript",
   			price: 4000,
-  			rating: 5,
+  			rating: 4.1,
   			binding: "Paperback",
-  			publisher: "Universities Press",
-  			releaseDate: "25-08-2000",
-  			details: "Wings of Fire traces the life and times of India's former president A.P.J. Abdul Kalam. It gives a glimpse of his childhood as well as his growth as India's Missile Man..."
+  			publisher: "Wrox Press",
+  			releaseDate: "09-03-2015",
+  			details: "The bestselling JavaScript guide, updated with current features and best practices Beginning JavaScript 5th Edition shows you how to work effectively with JavaScript frameworks, functions, and modern browsers..."
   		}
   	];
     return {
