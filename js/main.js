@@ -47,23 +47,23 @@ $(document).ready(function () {
  			templateUrl: "book-list.html",
  			controller: "BookListCtrl"
  		})
- 		.when("/kart", {
- 			templateUrl: "kart-list.html",
-      controller: "KartListCtrl"
+ 		.when("/cart", {
+ 			templateUrl: "cart-list.html",
+      controller: "cartListCtrl"
  		})
  	.otherwise({
  		redirectTo: "/books"
  	});
  });
- myApp.factory("kartService",function () {
-   var kart =[];
+ myApp.factory("cartService",function () {
+   var cart =[];
 
    return {
-     getKart:function () {
-       return kart;
+     getCart:function () {
+       return cart;
      },
-     addToKart:function (book) {
-       kart.push(book);
+     addToCart:function (book) {
+       cart.push(book);
      },
      buy:function (book) {
        alert("Thanks for buying "+ book.name);
@@ -141,10 +141,10 @@ $(document).ready(function () {
 
 
  });
-myApp.controller("KartListCtrl",function ($scope,kartService) {
-  $scope.kart = kartService.getKart();
+myApp.controller("cartListCtrl",function ($scope,cartService) {
+  $scope.cart = cartService.getCart();
   $scope.buy =function (book) {
-    kartService.buy(book);
+    cartService.buy(book);
 
   }
 
@@ -153,17 +153,17 @@ myApp.controller("KartListCtrl",function ($scope,kartService) {
 });
  myApp.controller("HeaderCtrl", function($scope) {
  	$scope.appDetails = {};
- 	$scope.appDetails.title = "BooKart";
+ 	$scope.appDetails.title = "Bookcart";
  	$scope.appDetails.tagline = "We have collection of 1 Million books";
 
 
  });
 
- myApp.controller("BookListCtrl", function($scope,bookService,kartService) {
+ myApp.controller("BookListCtrl", function($scope,bookService,cartService) {
  	$scope.books =bookService.getBooks();
 
- 	$scope.addToKart = function(book) {
-    kartService.addToKart(book);
+ 	$scope.addToCart = function(book) {
+    cartService.addToCart(book);
  	}
 
 
