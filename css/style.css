@@ -16,10 +16,13 @@ body{
 	font-size: 40px;
 	font-family: serif;
 
+
 }
 .menu ul {
 	position: fixed;
 	display: flex;
+
+
 }
 
 header {
@@ -65,19 +68,21 @@ header nav ul li a:hover {
 .img1{
 
 	background-image:linear-gradient(rgba(0, 0, 0, 0.4),rgba(0, 0, 0, 0.8)), url(..//images/cloud2.jpg);
-	background-size: 100%;
+    background-size: 100%;
 	/* margin-top: 7px; */
 
 }
 .img2{
 	background-image:linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.8)), url(..//images/2.jpg);
-	background-size: 100%;
+    background-size: 100%;
+
 	/* margin-top: 7px; */
 
 }
 .img3{
 	background-image:linear-gradient(rgba(0, 0, 0, 0.4),rgba(0, 0, 0, 0.8)), url(..//images/3.jpg);
-	background-size: 100%;
+    background-size: 100%;
+
 	/* margin-top: 7px; */
 
 }
@@ -87,6 +92,7 @@ header nav ul li a:hover {
 	color: white;
 	text-align: center;
 }
+
 .slider h2 {
 	font-weight: bold;
 	margin-top: 250px;
@@ -254,8 +260,10 @@ header nav ul li a:hover {
 }
 
 .nav-wrapper {
-    margin-left: 100px;
+    margin-left: 70px;
     margin-top: 15px;
+    position: absolute;
+
 }
 
 #bookListWrapper {
@@ -297,9 +305,14 @@ nav ul li.activeClass a{
 }
 .nav {
 	margin-left: 600px;
+    position: relative;
+    display: inline-block;
+   
 }
+
 .book .btn {
 	margin-left: 100px;
+    position: relative;
 }
 .book-details .btn {
 	margin-left: 800px;
